@@ -48,6 +48,7 @@
     "Application.RandomNumberSpout.executor": "Run",
     "Application.RandomNumberTopology.executor": "Run",
     "Application.TopologyMain.executor": "Run",
+    "Maven.storm-simple [clean,package].executor": "Run",
     "Maven.storm-simple [clean].executor": "Run",
     "Maven.storm-simple [install].executor": "Run",
     "Maven.storm-simple [package].executor": "Run",
@@ -65,6 +66,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.RandomNumberSpout">
     <configuration name="RandomNumberSpout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.apache.storm.RandomNumberSpout" />
@@ -131,7 +137,7 @@
       <updated>1733134171835</updated>
       <workItem from="1733134172922" duration="39000" />
       <workItem from="1733134377956" duration="17000" />
-      <workItem from="1733134416563" duration="5256000" />
+      <workItem from="1733134416563" duration="7096000" />
     </task>
     <servers />
   </component>
