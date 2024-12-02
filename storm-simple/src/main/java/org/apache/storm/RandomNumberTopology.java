@@ -1,27 +1,30 @@
 package org.apache.storm;
 
+
 import org.apache.storm.topology.TopologyBuilder;
 
 public class RandomNumberTopology {
     public static void main(String[] args) throws Exception {
         TopologyBuilder builder = new TopologyBuilder();
 
-        // Add spout with configurable parallelism
-        int numExecutors = 2;  // Number of executors
-        int numTasks = 4;      // Number of tasks
+        // Spout configuration
+        int spoutExecutors = 2;
+        int spoutTasks = 4;
+        builder.setSpout("random-spout", new RandomNumberSpout(), spoutExecutors)
+                .setNumTasks(spoutTasks);
 
-        builder.setSpout("random-spout", new RandomNumberSpout(), numExecutors)
-                .setNumTasks(numTasks);
+        // Add the Filtering Bolt
+        int filterBoltExecutors = 2;  // Set parallelism for the bolt
+        builder.setBolt("filter-odd-bolt", new FilterOddBolt(), filterBoltExecutors)
+                .shuffleGrouping("random-spout");
 
+        // Config settings
         Config config = new Config();
         config.setDebug(true);
+        config.setNumWorkers(2); // Number of workers
+        config.setMessageTimeoutSecs(30); // Message timeout
 
-        // Set the number of workers
-        config.setNumWorkers(2);
-
-        // Set message timeout
-        config.setMessageTimeoutSecs(30);
-
+        // Submit the topology to the cluster
         StormSubmitter.submitTopology("RandomNumberTopology", config, builder.createTopology());
     }
 }
