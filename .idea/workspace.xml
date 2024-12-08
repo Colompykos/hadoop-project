@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16b06f0f-3c45-4467-a752-5a14ac4a6305" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hadoop-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/src/main/java/com/example/hadoop/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop-project/src/main/java/com/example/hadoop/HighestRatedMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +79,7 @@
       <recent name="C:\Users\maroi\IdeaProjects\HadoopExample\storm-kafka-spout\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maroi\IdeaProjects\HadoopExample\hadoop-project\Rapport" />
       <recent name="C:\Users\maroi\IdeaProjects\HadoopExample\storm-kafka-spout\src\main\java\org\apache\storm" />
     </key>
   </component>
@@ -171,7 +161,7 @@
       <workItem from="1733380789279" duration="5559000" />
       <workItem from="1733490551919" duration="1742000" />
       <workItem from="1733492902917" duration="24920000" />
-      <workItem from="1733655380991" duration="3237000" />
+      <workItem from="1733655380991" duration="4603000" />
     </task>
     <servers />
   </component>
