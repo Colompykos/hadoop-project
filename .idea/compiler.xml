@@ -8,6 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="storm-simple" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hadoop-project" />
+      </profile>
     </annotationProcessing>
   </component>
 </project>
